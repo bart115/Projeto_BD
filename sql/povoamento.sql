@@ -45,28 +45,34 @@ VALUES
         ('222444555', 'Miguel Sousa', 'Rua das Hortênsias, 23, Porto', '919876545', 'miguel.sousa@gmail.com'),
         ('333555666', 'Nuno Mendes', 'Avenida da Paz, 45, Faro', '915678236', 'nuno.mendes@gmail.com'),
         ('444666777', 'Olga Lopes', 'Travessa da Justiça, 67, Coimbra', '917654323', 'olga.lopes@gmail.com'),
-        ('555777888', 'Pedro Rodrigues', 'Rua da Alegria, 89, Braga', '918273647', 'pedro.rodrigues@gmail.com');
-
+        ('555777888', 'Pedro Rodrigues', 'Rua da Alegria, 89, Braga', '918273647', 'pedro.rodrigues@gmail.com'),
+        ('555777889', 'Luis Lopes', 'Travessa da Justiça, 88, Coimbra', '917654323', 'luis.lopes@gmail.com'),
+        ('555777899', 'Gonçalo Freitas', 'Travessa da Justiça, 67, Guimarães', '966628718', 'gsalo.freitas@gmail.com');
+        
+-- select * from cliente
 -- Povoamento da tabela Caso
 INSERT INTO Caso
 	(Nome, Data_inicio_investigação, Data_fim_investigação, Estado_processo, Categoria, Montante_de_Pagamento, Forma_de_Pagamento, Estado_do_Pagamento, Id_Detetive, NIF_Cliente)
 VALUES
-        ('Caso 1', '2024-01-01', '2024-03-01', 1, 'Investigação Criminal', 1500.00, 'Cartão de Crédito', 1, 1, '111222333'),
-        ('Caso 2', '2024-02-15', '2024-04-15', 1, 'Perícia Forense', 2000.00, 'Transferência Bancária', 1, 2, '222333444'),
-        ('Caso 3', '2024-03-01', '2024-05-01', 0, 'Cybersegurança', 2500.00, 'Dinheiro', 0, 3, '333444555'),
-        ('Caso 4', '2024-04-10', '2024-06-10', 0, 'Inteligência e Contraespionagem', 3000.00, 'Cartão de Crédito', 0, 4, '444555666'),
-        ('Caso 5', '2024-05-05', '2024-07-05', 1, 'Análise de Dados', 1800.00, 'Transferência Bancária', 1, 5, '555666777'),
-        ('Caso 6', '2024-06-01', '2024-08-01', 0, 'Investigação Financeira', 2200.00, 'Dinheiro', 0, 6, '666777888'),
-        ('Caso 7', '2024-07-15', '2024-09-15', 1, 'Investigação de Fraudes', 2700.00, 'Cartão de Crédito', 1, 7, '777888999'),
-        ('Caso 8', '2024-08-01', '2024-10-01', 0, 'Investigação de Homicídios', 3200.00, 'Transferência Bancária', 0, 8, '888999000'),
-        ('Caso 9', '2024-09-10', '2024-11-10', 0, 'Investigação de Roubo de Arte', 3500.00, 'Dinheiro', 1, 9, '999000111'),
-        ('Caso 10', '2024-10-01', '2024-12-01', 1, 'Investigação de Tráfico de Drogas', 4000.00, 'Cartão de Crédito', 0, 10, '000111222'),
-        ('Caso 11', '2024-11-05', '2025-01-05', 1, 'Investigação de Crimes Cibernéticos', 4500.00, 'Transferência Bancária', 1, 11, '111333444'),
-        ('Caso 12', '2024-12-01', '2025-02-01', 1, 'Investigação de Desaparecidos', 5000.00, 'Dinheiro', 0, 12, '222444555'),
-        ('Caso 13', '2025-01-10', '2025-03-10', 0, 'Investigação Ambiental', 5500.00, 'Cartão de Crédito', 1, 13, '333555666'),
-        ('Caso 14', '2025-02-01', '2025-04-01', 1, 'Investigação de Terrorismo', 6000.00, 'Transferência Bancária', 0, 14, '444666777'),
-        ('Caso 15', '2025-03-15', '2025-05-15', 0, 'Investigação de Sequestros', 6500.00, 'Dinheiro', 1, 15, '555777888');
+        ('Caso 1', '2024-01-01', '2024-03-01', '1', 'Investigação Criminal', 1500.00, 'Cartão de Crédito', '1', 1, '111222333'),
+        ('Caso 2', '2024-02-15', '2024-04-15', '1', 'Perícia Forense', 2000.00, 'Transferência Bancária', '1', 2, '222333444'),
+        ('Caso 3', '2024-03-01', '2024-05-01', '0', 'Cybersegurança', 2500.00, 'Dinheiro', 0, 3, '333444555'),
+        ('Caso 4', '2024-04-10', '2024-06-10', '0', 'Inteligência e Contraespionagem', 3000.00, 'Cartão de Crédito', '0', 4, '444555666'),
+        ('Caso 5', '2024-05-05', '2024-07-05', '1', 'Análise de Dados', 1800.00, 'Transferência Bancária', '1', 5, '555666777'),
+        ('Caso 6', '2024-06-01', '2024-08-01', '0', 'Investigação Financeira', 2200.00, 'Dinheiro', '0', 6, '666777888'),
+        ('Caso 7', '2024-07-15', '2024-09-15', '1', 'Investigação de Fraudes', 2700.00, 'Cartão de Crédito', '1', 7, '777888999'),
+        ('Caso 8', '2024-08-01', '2024-10-01', '0', 'Investigação de Homicídios', 3200.00, 'Transferência Bancária', '0', 8, '888999000'),
+        ('Caso 9', '2024-09-10', '2024-11-10', '0', 'Investigação de Roubo de Arte', 3500.00, 'Dinheiro', '1', 9, '999000111'),
+        ('Caso 10', '2024-10-01', '2024-12-01', '1', 'Investigação de Tráfico de Drogas', 4000.00, 'Cartão de Crédito', '0', 10, '000111222'),
+        ('Caso 11', '2024-11-05', '2025-01-05', '1', 'Investigação de Crimes Cibernéticos', 4500.00, 'Transferência Bancária', '1', 11, '111333444'),
+        ('Caso 12', '2024-12-01', '2025-02-01', '1', 'Investigação de Desaparecidos', 5000.00, 'Dinheiro', '0', 12, '222444555'),
+        ('Caso 13', '2025-01-10', '2025-03-10', '0', 'Investigação Ambiental', 5500.00, 'Cartão de Crédito', '1', 13, '333555666'),
+        ('Caso 14', '2025-02-01', '2025-04-01', '1', 'Investigação de Terrorismo', 6000.00, 'Transferência Bancária', '0', 14, '444666777'),
+        ('Caso 15', '2025-03-15', '2025-05-15', '0', 'Investigação de Sequestros', 6500.00, 'Dinheiro', '1', 15, '555777888'),
+        ('Caso 16', '2025-04-20', '2025-05-15', '1', 'Investigação de Sequestros', 1000.00, 'Dinheiro', '1', 1, '555777889'),
+        ('Caso 17', '2025-04-16', '2025-05-10', '1', 'Investigação de Sequestros', 1000.00, 'Dinheiro', '1', 2, '555777899');
         
+-- select * from caso
 -- Povoamento da tabela arma
 INSERT INTO Arma 
   (N_Licença, Data_Fabrico, Modelo, N_de_Munições, Id_Detetive)
