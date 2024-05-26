@@ -1,10 +1,10 @@
 -- Implementação do sistema de bases de dados para o caso de estudo tricornio 
 -- Maio 2024
 -- Goncalo Freitas a104350
--- Leonor Cunha 
--- João Ferreira
--- Eduarda Vieira
--- Tiago Barros 
+-- Leonor Cunha a103997
+-- João Ferreira a104539
+-- Eduarda Vieira a104098
+-- Tiago Barros a104530
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
