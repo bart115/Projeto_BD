@@ -33,7 +33,19 @@ CREATE VIEW Folha_Pagamento
  --    
 SELECT *
 	FROM Folha_Pagamento;
-        
+    
+-- Casos ativos por detetive 
+CREATE VIEW  CasosAtivos_detetives
+	As
+		SELECT  Caso.Nome AS "Nome do Caso", Detetive.Nome AS "Nome do Detetive"
+        FROM Caso INNER JOIN Detetive
+        ON caso.Id_Detetive =  detetive.idDetetive
+        where caso.Estado_processo = 1 ;
+
+ DROP VIEW CasosAtivos_detetives;
+ --    
+SELECT *
+	FROM CasosAtivos_detetives;
         
         
         
