@@ -1,8 +1,7 @@
 USE tricornio;
 
-
--- 1 Quais os casos ativos de um detetive?
 -- FUNCIONA
+-- 1 Quais os casos ativos de um detetive?
 DELIMITER $$
 Create procedure casos_detetives(IN id_detetive INT)
 Begin 
