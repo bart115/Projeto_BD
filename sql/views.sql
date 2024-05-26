@@ -1,0 +1,2 @@
+-- criar uma view a dizer o histórico "A cada momento, deve ser possível obter o histórico de investigação/casos de cada detetive"
+-- No final do dia deve ser possível consultar um relatório diário, onde consta o número de casos ativos e detetives ocupados com casos

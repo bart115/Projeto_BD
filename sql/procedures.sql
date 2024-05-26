@@ -1,7 +1,7 @@
 USE tricornio;
 
 
--- RE1 Quais os casos ativos de um detetive?
+-- 1 Quais os casos ativos de um detetive?
 -- FUNCIONA
 DELIMITER $$
 Create procedure casos_detetives(IN id_detetive INT)
@@ -15,7 +15,8 @@ END $$
 -- testando procedure 
 -- CALL casos_detetives(1) possui o caso 1 e o 16 
 -- ------------------
--- RE2 É possivel contar o número de provas associada a um caso ?
+
+-- 2 É possivel contar o número de provas associada a um caso ?
 -- drop procedure numerodeprovas_caso;
 DELIMITER $$
 Create procedure numerodeprovas_caso(IN id_caso INT)
@@ -30,7 +31,7 @@ END $$
 -- CALL numerodeprovas_caso(1) == 3	
 -- ------------------
 
--- RE3 É possível saber quais as análises que estão estão associadas a uma prova?
+-- 3 É possível saber quais as análises que estão estão associadas a uma prova?
 -- drop procedure analises_prova
 DELIMITER $$
 Create procedure analises_prova(IN id_prova INT)
@@ -44,7 +45,7 @@ END $$
 -- CALL analises_prova(1)
 -- ------------------
 
--- RE4 É possível saber qual o histórico de casos de investigação de um detetive?
+-- 4 É possível saber qual o histórico de casos de investigação de um detetive?
 DELIMITER $$
 Create procedure casos_detetive(IN id_detetive INT)
 Begin 
@@ -58,7 +59,7 @@ END $$
 -- ------------------
 
 
--- RE5 É possível saber quais os casos associados a um cliente?
+-- 5 É possível saber quais os casos associados a um cliente?
 DELIMITER $$
 Create procedure casos_cliente(IN id_cliente INT)
 Begin 
